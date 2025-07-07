@@ -84,6 +84,7 @@
             this.txt_user.Size = new System.Drawing.Size(269, 28);
             this.txt_user.TabIndex = 7;
             this.txt_user.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_user.TextChanged += new System.EventHandler(this.txt_user_TextChanged);
             // 
             // txt_pass
             // 
@@ -109,7 +110,6 @@
             this.lbl_desc.TabIndex = 9;
             this.lbl_desc.Text = "This is a static login form, meaning credentials are declared \r\nrather dynamicall" +
     "y fetching in a database.\r\n";
-            this.lbl_desc.Click += new System.EventHandler(this.lbl_desc_Click);
             // 
             // btn_login
             // 
@@ -148,7 +148,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.ptb_graphic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

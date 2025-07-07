@@ -22,10 +22,10 @@ namespace DigitalCV
             txt_pass.KeyDown += TextBoxes_KeyDown;
 
             // Attach focus events
-            txt_user.Enter += txt_user_Enter;
-            txt_user.Leave += txt_user_Leave;
-            txt_pass.Enter += txt_pass_Enter;
-            txt_pass.Leave += txt_pass_Leave;
+            //txt_user.Enter += txt_user_Enter;
+            //txt_user.Leave += txt_user_Leave;
+            //txt_pass.Enter += txt_pass_Enter;
+            //txt_pass.Leave += txt_pass_Leave;
 
             // Attach button hover and click visuals
             btn_login.MouseEnter += btn_login_MouseEnter;
@@ -34,29 +34,29 @@ namespace DigitalCV
             btn_login.MouseUp += btn_login_MouseUp;
         }
 
-        private void lbl_desc_Click(object sender, EventArgs e)
-        {
-        }
+        //private void lbl_desc_Click(object sender, EventArgs e)
+        //{
+        //}
 
-        private void txt_user_Enter(object sender, EventArgs e)
-        {
-            txt_user.BackColor = Color.White;
-        }
+        //private void txt_user_Enter(object sender, EventArgs e)
+        //{
+        //    txt_user.BackColor = Color.White;
+        //}
 
-        private void txt_user_Leave(object sender, EventArgs e)
-        {
-            txt_user.BackColor = SystemColors.Control;
-        }
+        //private void txt_user_Leave(object sender, EventArgs e)
+        //{
+        //    //txt_user.BackColor = SystemColors.Control;
+        //}
 
-        private void txt_pass_Enter(object sender, EventArgs e)
-        {
-            txt_pass.BackColor = Color.White;
-        }
+        //private void txt_pass_Enter(object sender, EventArgs e)
+        //{
+        //    txt_pass.BackColor = Color.White;
+        //}
 
-        private void txt_pass_Leave(object sender, EventArgs e)
-        {
-            txt_pass.BackColor = SystemColors.Control;
-        }
+        //private void txt_pass_Leave(object sender, EventArgs e)
+        //{
+        //    //txt_pass.BackColor = SystemColors.Control;
+        //}
 
         private void btn_login_MouseEnter(object sender, EventArgs e)
         {
@@ -103,6 +103,11 @@ namespace DigitalCV
             {
                 MessageBox.Show("Invalid credentials.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void txt_user_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
