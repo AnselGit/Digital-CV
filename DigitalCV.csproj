@@ -97,6 +97,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="assets\bbg.jpg" />
     <Content Include="assets\bg2.jpg" />
     <Content Include="assets\fa.gif" />

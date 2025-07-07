@@ -84,7 +84,7 @@ namespace DigitalCV
             this.btn_CallToAction.Size = new System.Drawing.Size(461, 42);
             this.btn_CallToAction.TabIndex = 2;
             this.btn_CallToAction.Text = "See Your CV Now!";
-            this.btn_CallToAction.TextColor = System.Drawing.Color.Blue;
+            this.btn_CallToAction.TextColor = System.Drawing.Color.Black;
             this.btn_CallToAction.UseVisualStyleBackColor = false;
             this.btn_CallToAction.Click += new System.EventHandler(this.btn_CallToAction_Click_1);
             // 
