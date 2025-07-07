@@ -78,5 +78,18 @@ namespace DigitalCV
             // Optional: if you want to make sure the app exits completely
             Application.Exit();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new Form4().Show();
+        }
+
+        private void lkl_close_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            foreach (Form frm in Application.OpenForms.Cast<Form>().ToList())
+            {
+                frm.Close();
+            }
+        }
     }
 }
