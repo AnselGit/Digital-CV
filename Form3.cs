@@ -66,5 +66,17 @@ namespace DigitalCV
         {
 
         }
+
+        private void lkl_close_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Close all forms except the main one (optional)
+            foreach (Form frm in Application.OpenForms.Cast<Form>().ToList())
+            {
+                frm.Close();
+            }
+
+            // Optional: if you want to make sure the app exits completely
+            Application.Exit();
+        }
     }
 }
