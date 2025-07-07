@@ -107,6 +107,8 @@
     <Content Include="assets\jk.gif" />
     <Content Include="assets\lbg.gif" />
     <Content Include="assets\lbg2.jpg" />
+    <Content Include="assets\pbg.gif" />
+    <Content Include="assets\pfp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
