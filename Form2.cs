@@ -21,5 +21,26 @@ namespace DigitalCV
         {
 
         }
+
+        private void txt_user_MouseHover(object sender, EventArgs e)
+        {
+            txt_user.BackColor = Color.White;
+        }
+
+        private void txt_user_MouseLeave(object sender, EventArgs e)
+        {
+            txt_user.BackColor = SystemColors.Control;
+        }
+
+        private void txt_pass_MouseHover(object sender, EventArgs e)
+        {
+            txt_user.BackColor = Color.White;
+        }
+
+        private void txt_pass_MouseLeave(object sender, EventArgs e)
+        {
+            txt_user.BackColor = SystemColors.Control;
+        }
+
     }
 }
