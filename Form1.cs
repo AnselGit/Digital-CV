@@ -13,10 +13,20 @@ namespace DigitalCV
             Heading1.BackColor = System.Drawing.Color.Transparent;
         }
 
+        private Form2 form2Instance;
+
         private void btn_CallToAction_Click_1(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.Show();
+            if (form2Instance == null || form2Instance.IsDisposed)
+            {
+                form2Instance = new Form2();
+                form2Instance.Show();
+            }
+            else
+            {
+                form2Instance.BringToFront(); // Optional: bring to top if it's hidden
+            }
         }
+
     }
 }

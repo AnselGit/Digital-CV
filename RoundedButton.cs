@@ -10,41 +10,77 @@ namespace DigitalCV
     [DesignerCategory("Code")]
     public class RoundedButton : Button
     {
-        [Browsable(true)]
-        public int BorderRadius { get; set; } = 20;
-
-        [Browsable(true)]
-        public Color NormalBackColor { get; set; } = Color.MediumSlateBlue;
-
-        [Browsable(true)]
-        public Color HoverBackColor { get; set; } = Color.RoyalBlue;
-
-        [Browsable(true)]
-        public Color ClickBackColor { get; set; } = Color.MidnightBlue;
-
-        [Browsable(true)]
-        public Color TextColor { get; set; } = Color.White;
-
         private Color currentBackColor;
 
         public RoundedButton()
         {
             FlatStyle = FlatStyle.Flat;
             FlatAppearance.BorderSize = 0;
-            ForeColor = TextColor;
-            currentBackColor = NormalBackColor;
 
-            this.MouseEnter += (s, e) => { currentBackColor = HoverBackColor; Invalidate(); };
-            this.MouseLeave += (s, e) => { currentBackColor = NormalBackColor; Invalidate(); };
-            this.MouseDown += (s, e) => { currentBackColor = ClickBackColor; Invalidate(); };
-            this.MouseUp += (s, e) => { currentBackColor = HoverBackColor; Invalidate(); };
+            this.MouseEnter += (s, e) => {
+                if (HoverBackColor != Color.Empty)
+                {
+                    currentBackColor = HoverBackColor;
+                    Invalidate();
+                }
+            };
+            this.MouseLeave += (s, e) => {
+                if (NormalBackColor != Color.Empty)
+                {
+                    currentBackColor = NormalBackColor;
+                    Invalidate();
+                }
+            };
+            this.MouseDown += (s, e) => {
+                if (ClickBackColor != Color.Empty)
+                {
+                    currentBackColor = ClickBackColor;
+                    Invalidate();
+                }
+            };
+            this.MouseUp += (s, e) => {
+                if (HoverBackColor != Color.Empty)
+                {
+                    currentBackColor = HoverBackColor;
+                    Invalidate();
+                }
+            };
         }
+
+        protected override void OnHandleCreated(EventArgs e)
+        {
+            base.OnHandleCreated(e);
+            if (NormalBackColor != Color.Empty)
+            {
+                currentBackColor = NormalBackColor;
+                Invalidate();
+            }
+        }
+
+        [Category("Appearance")]
+        [Browsable(true)]
+        public int BorderRadius { get; set; } = 20;
+
+        [Category("Appearance")]
+        [Browsable(true)]
+        public Color NormalBackColor { get; set; }
+
+        [Category("Appearance")]
+        [Browsable(true)]
+        public Color HoverBackColor { get; set; }
+
+        [Category("Appearance")]
+        [Browsable(true)]
+        public Color ClickBackColor { get; set; }
+
+        [Category("Appearance")]
+        [Browsable(true)]
+        public Color TextColor { get; set; } = Color.Empty;
 
         protected override void OnPaint(PaintEventArgs pevent)
         {
             base.OnPaint(pevent);
-
-            if (this.DesignMode) return;
+            if (DesignMode) return;
 
             Graphics g = pevent.Graphics;
             g.SmoothingMode = SmoothingMode.AntiAlias;
@@ -53,7 +89,8 @@ namespace DigitalCV
             using (GraphicsPath path = GetRoundPath(rect, BorderRadius))
             {
                 this.Region = new Region(path);
-                using (SolidBrush brush = new SolidBrush(currentBackColor))
+
+                using (SolidBrush brush = new SolidBrush(currentBackColor == Color.Empty ? this.BackColor : currentBackColor))
                     g.FillPath(brush, path);
 
                 using (StringFormat sf = new StringFormat
@@ -61,7 +98,7 @@ namespace DigitalCV
                     Alignment = StringAlignment.Center,
                     LineAlignment = StringAlignment.Center
                 })
-                using (SolidBrush textBrush = new SolidBrush(TextColor))
+                using (SolidBrush textBrush = new SolidBrush(TextColor == Color.Empty ? this.ForeColor : TextColor))
                     g.DrawString(this.Text, this.Font, textBrush, rect, sf);
             }
         }

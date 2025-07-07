@@ -15,6 +15,7 @@ namespace DigitalCV
         public Form2()
         {
             InitializeComponent();
+            this.AcceptButton = btn_login;
 
             // Attach Enter key listener
             txt_user.KeyDown += TextBoxes_KeyDown;
@@ -87,7 +88,7 @@ namespace DigitalCV
             }
         }
 
-        private void btn_login_Click(object sender, EventArgs e)
+        private void btn_login_Click_1(object sender, EventArgs e)
         {
             string username = txt_user.Text.Trim();
             string password = txt_pass.Text.Trim();
@@ -95,9 +96,8 @@ namespace DigitalCV
             if (username == "admin" && password == "1234")
             {
                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                // TODO: Open Form3 here if needed
-                // new Form3().Show();
-                // this.Hide();
+                new Form3().Show();
+                this.Hide();
             }
             else
             {

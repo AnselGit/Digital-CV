@@ -73,16 +73,16 @@ namespace DigitalCV
             // 
             this.btn_CallToAction.BackColor = System.Drawing.Color.White;
             this.btn_CallToAction.BorderRadius = 45;
-            this.btn_CallToAction.ClickBackColor = System.Drawing.Color.MidnightBlue;
+            this.btn_CallToAction.ClickBackColor = System.Drawing.Color.Black;
             this.btn_CallToAction.FlatAppearance.BorderSize = 0;
             this.btn_CallToAction.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_CallToAction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CallToAction.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CallToAction.ForeColor = System.Drawing.Color.Black;
-            this.btn_CallToAction.HoverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_CallToAction.HoverBackColor = System.Drawing.Color.White;
             this.btn_CallToAction.Location = new System.Drawing.Point(410, 493);
             this.btn_CallToAction.Name = "btn_CallToAction";
-            this.btn_CallToAction.NormalBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_CallToAction.NormalBackColor = System.Drawing.Color.White;
             this.btn_CallToAction.Size = new System.Drawing.Size(461, 42);
             this.btn_CallToAction.TabIndex = 2;
             this.btn_CallToAction.Text = "See Your CV Now!";

@@ -107,20 +107,23 @@
             // btn_login
             // 
             this.btn_login.BackColor = System.Drawing.Color.CornflowerBlue;
-            //this.btn_login.BackgroundColor = System.Drawing.Color.Transparent;
             this.btn_login.BorderRadius = 45;
+            this.btn_login.ClickBackColor = System.Drawing.Color.MidnightBlue;
             this.btn_login.FlatAppearance.BorderSize = 0;
             this.btn_login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_login.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.Color.White;
+            this.btn_login.HoverBackColor = System.Drawing.Color.RoyalBlue;
             this.btn_login.Location = new System.Drawing.Point(12, 603);
             this.btn_login.Name = "btn_login";
+            this.btn_login.NormalBackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_login.Size = new System.Drawing.Size(406, 42);
             this.btn_login.TabIndex = 3;
             this.btn_login.Text = "See Your CV Now!";
-            this.btn_login.TextColor = System.Drawing.Color.Transparent;
+            this.btn_login.TextColor = System.Drawing.Color.White;
             this.btn_login.UseVisualStyleBackColor = false;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click_1);
             // 
             // Form2
             // 
