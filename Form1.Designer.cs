@@ -64,9 +64,9 @@ namespace DigitalCV
             this.panel1.Controls.Add(this.btn_CallToAction);
             this.panel1.Controls.Add(this.Heading1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(2, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1280, 721);
+            this.panel1.Size = new System.Drawing.Size(1262, 680);
             this.panel1.TabIndex = 3;
             // 
             // btn_CallToAction
@@ -94,7 +94,7 @@ namespace DigitalCV
             // 
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
             this.Name = "Form1";
