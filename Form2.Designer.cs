@@ -53,10 +53,11 @@
             // 
             this.lbl_user.AutoSize = true;
             this.lbl_user.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbl_user.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_user.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_user.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lbl_user.Location = new System.Drawing.Point(13, 404);
             this.lbl_user.Name = "lbl_user";
-            this.lbl_user.Size = new System.Drawing.Size(109, 30);
+            this.lbl_user.Size = new System.Drawing.Size(106, 30);
             this.lbl_user.TabIndex = 5;
             this.lbl_user.Text = "Username";
             // 
@@ -64,38 +65,44 @@
             // 
             this.lbl_pass.AutoSize = true;
             this.lbl_pass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbl_pass.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pass.Location = new System.Drawing.Point(13, 495);
+            this.lbl_pass.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pass.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.lbl_pass.Location = new System.Drawing.Point(13, 484);
             this.lbl_pass.Name = "lbl_pass";
-            this.lbl_pass.Size = new System.Drawing.Size(104, 30);
+            this.lbl_pass.Size = new System.Drawing.Size(100, 30);
             this.lbl_pass.TabIndex = 6;
             this.lbl_pass.Text = "Password";
             // 
             // txt_user
             // 
-            this.txt_user.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_user.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_user.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_user.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txt_user.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_user.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_user.ForeColor = System.Drawing.Color.RoyalBlue;
             this.txt_user.Location = new System.Drawing.Point(12, 440);
             this.txt_user.Name = "txt_user";
-            this.txt_user.Size = new System.Drawing.Size(405, 35);
+            this.txt_user.Size = new System.Drawing.Size(269, 28);
             this.txt_user.TabIndex = 7;
+            this.txt_user.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt_pass
             // 
-            this.txt_pass.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_pass.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pass.Location = new System.Drawing.Point(12, 528);
+            this.txt_pass.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txt_pass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_pass.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pass.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.txt_pass.Location = new System.Drawing.Point(12, 517);
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.PasswordChar = '*';
-            this.txt_pass.Size = new System.Drawing.Size(405, 35);
+            this.txt_pass.Size = new System.Drawing.Size(269, 28);
             this.txt_pass.TabIndex = 8;
+            this.txt_pass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lbl_desc
             // 
             this.lbl_desc.AutoSize = true;
-            this.lbl_desc.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_desc.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_desc.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.lbl_desc.Location = new System.Drawing.Point(9, 327);
             this.lbl_desc.Name = "lbl_desc";
             this.lbl_desc.Size = new System.Drawing.Size(360, 34);
@@ -129,7 +136,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(430, 657);
             this.Controls.Add(this.lbl_desc);
             this.Controls.Add(this.txt_pass);
