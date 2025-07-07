@@ -80,7 +80,6 @@
             this.txt_user.Name = "txt_user";
             this.txt_user.Size = new System.Drawing.Size(405, 35);
             this.txt_user.TabIndex = 7;
-            this.txt_user.MouseHover += new System.EventHandler(this.txt_user_MouseHover);
             // 
             // txt_pass
             // 
@@ -108,7 +107,7 @@
             // btn_login
             // 
             this.btn_login.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btn_login.BackgroundColor = System.Drawing.Color.CornflowerBlue;
+            //this.btn_login.BackgroundColor = System.Drawing.Color.Transparent;
             this.btn_login.BorderRadius = 45;
             this.btn_login.FlatAppearance.BorderSize = 0;
             this.btn_login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
@@ -120,7 +119,7 @@
             this.btn_login.Size = new System.Drawing.Size(406, 42);
             this.btn_login.TabIndex = 3;
             this.btn_login.Text = "See Your CV Now!";
-            this.btn_login.TextColor = System.Drawing.Color.White;
+            this.btn_login.TextColor = System.Drawing.Color.Transparent;
             this.btn_login.UseVisualStyleBackColor = false;
             // 
             // Form2
