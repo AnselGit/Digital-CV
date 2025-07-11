@@ -86,10 +86,21 @@ namespace DigitalCV
 
         private void lkl_close_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            foreach (Form frm in Application.OpenForms.Cast<Form>().ToList())
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to exit?",
+                "Confirm Exit",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
             {
-                frm.Close();
+                foreach (Form frm in Application.OpenForms.Cast<Form>().ToList())
+                {
+                    frm.Close();
+                }
             }
         }
+
     }
 }

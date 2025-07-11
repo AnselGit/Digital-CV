@@ -55,7 +55,7 @@
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Navy;
-            this.linkLabel1.Location = new System.Drawing.Point(753, 23);
+            this.linkLabel1.Location = new System.Drawing.Point(726, 22);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(100, 24);
             this.linkLabel1.TabIndex = 33;
@@ -163,12 +163,12 @@
             this.lkl_close.BackColor = System.Drawing.Color.Transparent;
             this.lkl_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lkl_close.LinkColor = System.Drawing.Color.Navy;
-            this.lkl_close.Location = new System.Drawing.Point(859, 23);
+            this.lkl_close.Location = new System.Drawing.Point(832, 22);
             this.lkl_close.Name = "lkl_close";
-            this.lkl_close.Size = new System.Drawing.Size(58, 24);
+            this.lkl_close.Size = new System.Drawing.Size(83, 24);
             this.lkl_close.TabIndex = 24;
             this.lkl_close.TabStop = true;
-            this.lkl_close.Text = "Close";
+            this.lkl_close.Text = "Sign Out";
             this.lkl_close.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_close_LinkClicked_1);
             // 
             // label3
